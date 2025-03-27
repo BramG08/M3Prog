@@ -21,7 +21,7 @@ $winkel='{
 }
 ';
 
-$winkelDecode = json_decode($winkel,true);
+$winkelDecode = json_decode(json: $winkel,associative: true);
 echo $winkelDecode["winkel"]["producten"][0]["productNaam"];
 echo "<br>";
 echo $winkelDecode["winkel"]["producten"][0]["details"]["prijs"];
