@@ -1,6 +1,6 @@
 <?php 
 
-   
+   header("Content-type: application/json;");
     
 
 $trophiesPerGame = [
@@ -9,8 +9,6 @@ $trophiesPerGame = [
     "Rayman Origins"=> 9,
     "Tetris"=> 10
 ];
-$json = json_encode($trophiesPerGame);
-echo $json;
 
 
 $huisHouden= [
@@ -20,13 +18,11 @@ $huisHouden= [
     'nes'=> '2',
     'gameboy'=> '1'
     ];
-$json = json_encode($huisHouden);
-echo $json;
+
 
 
 $persoon = ['voornaam'=> 'Luigi', 'achternaam' => 'Mario', 'leeftijd' => 19,'woonplaats' => 'mushroomkingdom', 'favo eten' => 'pasta', 'minst favo eten' => 'paddestoelen'];
-$json = json_encode($persoon);
-echo $json;
+
 
 $weer = [
     "maandag" => 20,
@@ -37,8 +33,6 @@ $weer = [
     "zaterdag"=> 16,
     "zondag"=> 18
 ];
-$json = json_eb ncode($weer);
-echo $json;
 
 
 $jsonArray = [
@@ -48,6 +42,7 @@ $jsonArray = [
     $weer    
     ];
 
-print_r($jsonArray);
+    $json = json_encode($jsonArray);
+    echo $json;
 
 ?>
