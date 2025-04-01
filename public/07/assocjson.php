@@ -1,10 +1,18 @@
 <?php 
-$jsonArray[
-    $trophiesPerGame,
-    $persoon,
-    $huisHouden
+
+   
     
-]
+
+$trophiesPerGame = [
+    "Demon's souls" => 11,
+    "Mario wonder"=> 0,
+    "Rayman Origins"=> 9,
+    "Tetris"=> 10
+];
+$json = json_encode($trophiesPerGame);
+echo $json;
+
+
 $huisHouden= [
     "ps5"=> '19',
     'wasmachine'=> '30',
@@ -20,6 +28,26 @@ $persoon = ['voornaam'=> 'Luigi', 'achternaam' => 'Mario', 'leeftijd' => 19,'woo
 $json = json_encode($persoon);
 echo $json;
 
+$weer = [
+    "maandag" => 20,
+    "dinsdag" => 11,
+    "woensdag"=> 16,
+    "donderdag"=> 12,
+    "vrijdag"=> 14,
+    "zaterdag"=> 16,
+    "zondag"=> 18
+];
+$json = json_eb ncode($weer);
+echo $json;
 
+
+$jsonArray = [
+    $trophiesPerGame,
+    $huisHouden,
+    $persoon,
+    $weer    
+    ];
+
+print_r($jsonArray);
 
 ?>
