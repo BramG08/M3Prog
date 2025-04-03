@@ -47,7 +47,7 @@ foreach ($lunchmenu as $item) {
 </head>
 
 <body>
-    <h1>  Habduahda<h1>
+    <h1>  lunchmenu</h1>
 
     <p><?
        foreach ($lunchmenu as $item) {
